@@ -5,7 +5,7 @@ const BACKEND_URL =
 
 export async function storeExpense(expenseData) {
   const response = await axios.post(
-    BACKEND_URL + "/expenses.json",
+    BACKEND_URL + "/expenses.jsons",
     expenseData
   );
   const id = response.data.name;
